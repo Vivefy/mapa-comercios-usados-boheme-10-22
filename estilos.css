@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background-color: #f5f7fa;
+  }
+  
+  #mapa {
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .filtros {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    z-index: 9999;
+    background: white;
+    padding: 12px 18px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+  }
+  
+  .filtros label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .filtros select {
+    width: 200px;
+    margin-top: 4px;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  .leaflet-popup-content-wrapper {
+    max-width: 600px;  /* Ajusta según lo que necesites: 320, 400, etc */
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.leaflet-popup-content {
+    white-space: normal !important;
+    word-wrap: break-word;
+}
+
+  
+  header img {
+    max-width: 50px;  /* Ajusta el tamaño aquí */
+    height: auto;
+    display: block;
+}
+
+.encabezado {
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+    gap: 20px;
+    background-color: #f5f8fc;
+  }
+  
+  .encabezado img.logo {
+    max-width: 50px;
+    height: auto;
+  }
+  
+  .encabezado h1 {
+    font-size: 24px;
+    color: #111;
+    margin: 0;
+  }
+  
+
+.leaflet-popup-content {
+    white-space: normal !important; /* permite saltos de línea */
+    word-break: break-word;         /* evita desbordamientos */
+}
+.popup-vivefy {
+    max-width: 400px;
+    min-width: 300px;
+    white-space: normal;
+    word-wrap: break-word;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .scroll-box {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-top: 8px;
+    padding-right: 5px;
+  }
+  
+  .scroll-box label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 13px;
+  }
+  
+  .scroll-box input[type="checkbox"] {
+    margin-right: 6px;
+  }
+
+  .acordeon {
+    margin-bottom: 10px;
+  }
+  
+  .acordeon-titulo {
+    width: 100%;
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: 600;
+    padding: 6px 10px;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  .acordeon-titulo:hover {
+    background-color: #e1e1e1;
+  }
+  
+  .scroll-box {
+    display: none;  /* Oculto por defecto */
+    max-height: 200px;
+    overflow-y: auto;
+    margin-top: 6px;
+    padding-right: 5px;
+  }
+  
+  .acordeon.abierto .scroll-box {
+    display: block;
+  }
+  
+  .filtros-titulo {
+    font-size: 16px;
+    font-weight: bold;
+    color: #156dcc; /* azul cobalto (identidad Vivefy) */
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  

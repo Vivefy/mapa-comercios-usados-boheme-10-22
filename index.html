@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mapa Interactivo Vivefy</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="estilos.css" />
+</head>
+
+<body>
+    <header class="encabezado">
+        <img src="logo_vivefy.png" alt="Vivefy" class="logo">
+        <h1>Análisis comercial Boheme 10/22</h1>
+    </header>
+
+    <div class="filtros">
+        <div class="filtros-titulo">Comercios</div>
+
+        <div class="acordeon">
+            <button class="acordeon-titulo">Distancia:</button>
+            <div class="scroll-box" id="filtro-distancia"></div>
+        </div>
+        <div class="acordeon">
+            <button class="acordeon-titulo">Segmento:</button>
+            <div class="scroll-box" id="filtro-segmento"></div>
+        </div>
+        <div class="acordeon">
+            <button class="acordeon-titulo">Categoría:</button>
+            <div class="scroll-box" id="filtro-categoria"></div>
+        </div>
+
+        <div class="filtros-titulo">Locales Usados</div>
+
+        <div class="acordeon">
+            <button class="acordeon-titulo">Distancia:</button>
+            <div class="scroll-box" id="filtro-distancia-usados"></div>
+        </div>
+
+        <div class="acordeon">
+            <button class="acordeon-titulo">Antigüedad:</button>
+            <div class="scroll-box" id="filtro-antiguedad"></div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <div id="mapa"></div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
